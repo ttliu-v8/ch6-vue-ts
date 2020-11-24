@@ -28,6 +28,28 @@ const routes: Array<RouteConfig> = [
       title: '回执详情',
       back: ''
     }
+  },{
+    path: '/demo',
+    name: 'Demo',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Demo.vue'),
+    meta: {
+      title: '回执详情',
+      back: ''
+    }
+  },{
+    path: '/demo1',
+    name: 'Demo1',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Demo1.vue'),
+    meta: {
+      title: '回执详情',
+      back: ''
+    }
   }
 ]
 

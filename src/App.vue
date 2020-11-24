@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <van-nav-bar :title="headerTitle" left-text :left-arrow="leftArrow" @click-left="onClickLeft" />
+    <!-- <van-nav-bar :title="headerTitle" left-text :left-arrow="leftArrow" @click-left="onClickLeft" /> -->
     <router-view />
   </div>
 </template>
@@ -39,11 +39,11 @@ export default class App extends Vue {
 html,
 body {
   width: 100%;
-  height: 100vh;
-  overflow: auto;
+  height: 100%;
   background: #f8f8f8;
 }
 #app {
+  height: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
