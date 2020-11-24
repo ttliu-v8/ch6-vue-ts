@@ -9,10 +9,16 @@
 </template>
 
 <script lang="ts">
-import { Vue } from "vue-property-decorator";
-
+import { Component,Vue } from "vue-property-decorator";
+@Component
 export default class Demo1 extends Vue {
   imgURL ='./img/img1.png'
+  mounted(){
+    const str = /^{\d}$/g
+    const str2 = new RegExp(/^{\d}$/,'g')
+    console.log(str2.test('123'))
+    console.log(new Date('2020-11-11'))
+  }
 }
 </script>
 <style scoped lang=less>
