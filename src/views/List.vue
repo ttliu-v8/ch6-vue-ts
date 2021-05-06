@@ -1,5 +1,5 @@
 <template>
-  <div class="recipt-list">
+  <div class="list">
     <van-pull-refresh v-model="refreshing" @refresh="onRefresh">
       <van-list v-model="loadding" :finished="finished" finished-text="～我也是有底线的～" @load="onLoad"></van-list>
     </van-pull-refresh>
@@ -31,7 +31,7 @@ export default class Home extends Vue {
           new Object({
             no: new Date().getTime().toString,
             name: `张三${i}`,
-            reciptTitle: `回执名称${i}`,
+            reciptTitle: `名称${i}`,
           })
         );
       }
