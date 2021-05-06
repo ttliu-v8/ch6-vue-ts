@@ -13,7 +13,7 @@ const routes: Array<RouteConfig> = [
     name: 'ReciptList',
     component: () => import('../views/List.vue'),
     meta: {
-      title: '回执代办任务',
+      title: '列表',
       back: 'home'
     }
   },
@@ -25,7 +25,7 @@ const routes: Array<RouteConfig> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Recipt.vue'),
     meta: {
-      title: '回执详情',
+      title: '详情',
       back: ''
     }
   },{
@@ -47,7 +47,7 @@ const routes: Array<RouteConfig> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Demo1.vue'),
     meta: {
-      title: '回执详情',
+      title: '详情',
       back: ''
     }
   }
