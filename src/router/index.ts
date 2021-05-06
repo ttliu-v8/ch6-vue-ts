@@ -6,11 +6,11 @@ Vue.use(VueRouter)
 const routes: Array<RouteConfig> = [
   {
     path: '/',
-    redirect:'/reciptList'    
+    redirect:'/list'    
   },
   {
-    path: '/reciptList',
-    name: 'ReciptList',
+    path: '/list',
+    name: 'List',
     component: () => import('../views/List.vue'),
     meta: {
       title: '列表',
@@ -18,12 +18,12 @@ const routes: Array<RouteConfig> = [
     }
   },
   {
-    path: '/recipt',
-    name: 'Recipt',
+    path: '/detail',
+    name: 'Detail',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Recipt.vue'),
+    component: () => import(/* webpackChunkName: "about" */ '../views/Detail.vue'),
     meta: {
       title: '详情',
       back: ''
@@ -36,7 +36,7 @@ const routes: Array<RouteConfig> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Demo.vue'),
     meta: {
-      title: '回执详情',
+      title: '详情',
       back: ''
     }
   },{
